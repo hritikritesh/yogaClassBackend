@@ -1,0 +1,8 @@
+{
+    "rewrites": [{ "source": "/api/(.*)", "destination": "/api" },
+                 { "source": "/signup", "destination": "/api" },
+                 { "source": "/signin", "destination": "/api" },
+                 { "source": "/bookedSlot", "destination": "/api" },
+                 { "source": "/bookSlot", "destination": "/api" }
+]
+}

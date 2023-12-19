@@ -23,7 +23,7 @@ router.post("/bookSlot",requireLogin,(req,res) => {
     var date = new Date();
     var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
     
-    SLOT.find({slot:slot, bookedBy:req.user}).then((doc)=> {
+    SLOT.find({bookedBy:req.user}).then((doc)=> {
         if (doc.length === 0) {
             console.log(req.user);
             const saveSlot = new SLOT({

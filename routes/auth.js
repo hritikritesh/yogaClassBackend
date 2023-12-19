@@ -11,8 +11,8 @@ router.get('/',(req,res)=>{
 })
 
 router.post("/signup",(req,res) => {
-    const {name,email,password} = req.body;
-    if(!name || !email || !password)
+    const {name,email,dateOfBirth,password} = req.body;
+    if(!name || !email || !dateOfBirth || !password)
     {
         return res.status(422).json({error: 'Please add all the field'});
     }
@@ -29,6 +29,7 @@ router.post("/signup",(req,res) => {
                 {
                     name,
                     email,
+                    dateOfBirth,
                     password: hashedPassword
                 }
             );

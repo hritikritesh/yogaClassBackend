@@ -29,7 +29,7 @@ router.post("/bookSlot",requireLogin,(req,res) => {
             const saveSlot = new SLOT({
                 slot,
                 bookedBy:req.user,
-                expireAfter:lastDay
+                expiresAfter:lastDay
             })
             saveSlot.save().then((result)=>{
                 return res.json({result})

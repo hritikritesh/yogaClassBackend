@@ -10,7 +10,7 @@ Supports four types of request:
 
 ## ER diagram of database
 
-![alt text](https://github.com/hritikritesh/yogaClassBackend/blob/main/diagram.png?raw=true)
+![alt text](https://github.com/hritikritesh/yogaClassBackend/blob/main/diagram1.png?raw=true)
 
 ## Tools Used
 
